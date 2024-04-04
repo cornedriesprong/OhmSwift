@@ -11,6 +11,15 @@
 		9757462C2B9059F1008F688C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9757462B2B9059F1008F688C /* ContentView.swift */; };
 		9757462E2B9059F2008F688C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9757462D2B9059F2008F688C /* Assets.xcassets */; };
 		975746322B9059F2008F688C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 975746312B9059F2008F688C /* Preview Assets.xcassets */; };
+		97C6CF842B909046005B1CCB /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C6CF832B909046005B1CCB /* GridView.swift */; };
+		97C6CF872B90B2D2005B1CCB /* CP3_UI in Frameworks */ = {isa = PBXBuildFile; productRef = 97C6CF862B90B2D2005B1CCB /* CP3_UI */; };
+		97C6CF892B90DC74005B1CCB /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C6CF882B90DC74005B1CCB /* Event.swift */; };
+		97C6CF8B2B90DC7F005B1CCB /* Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C6CF8A2B90DC7F005B1CCB /* Sequence.swift */; };
+		97C6CF8D2B90DC8B005B1CCB /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C6CF8C2B90DC8B005B1CCB /* Command.swift */; };
+		97C6CF8F2B90DCA4005B1CCB /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C6CF8E2B90DCA4005B1CCB /* ViewModel.swift */; };
+		97C6CF922B91316F005B1CCB /* OSCKit in Frameworks */ = {isa = PBXBuildFile; productRef = 97C6CF912B91316F005B1CCB /* OSCKit */; };
+		97C6CF942B91316F005B1CCB /* OSCKitCore in Frameworks */ = {isa = PBXBuildFile; productRef = 97C6CF932B91316F005B1CCB /* OSCKitCore */; };
+		97C6CF962B913178005B1CCB /* OscManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C6CF952B913178005B1CCB /* OscManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +29,12 @@
 		9757462D2B9059F2008F688C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9757462F2B9059F2008F688C /* OhmSwift.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OhmSwift.entitlements; sourceTree = "<group>"; };
 		975746312B9059F2008F688C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		97C6CF832B909046005B1CCB /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
+		97C6CF882B90DC74005B1CCB /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		97C6CF8A2B90DC7F005B1CCB /* Sequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sequence.swift; sourceTree = "<group>"; };
+		97C6CF8C2B90DC8B005B1CCB /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
+		97C6CF8E2B90DCA4005B1CCB /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		97C6CF952B913178005B1CCB /* OscManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OscManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +42,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97C6CF872B90B2D2005B1CCB /* CP3_UI in Frameworks */,
+				97C6CF922B91316F005B1CCB /* OSCKit in Frameworks */,
+				97C6CF942B91316F005B1CCB /* OSCKitCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,7 +71,13 @@
 			isa = PBXGroup;
 			children = (
 				975746292B9059F1008F688C /* OhmSwiftApp.swift */,
+				97C6CF952B913178005B1CCB /* OscManager.swift */,
 				9757462B2B9059F1008F688C /* ContentView.swift */,
+				97C6CF8E2B90DCA4005B1CCB /* ViewModel.swift */,
+				97C6CF882B90DC74005B1CCB /* Event.swift */,
+				97C6CF8A2B90DC7F005B1CCB /* Sequence.swift */,
+				97C6CF8C2B90DC8B005B1CCB /* Command.swift */,
+				97C6CF832B909046005B1CCB /* GridView.swift */,
 				9757462D2B9059F2008F688C /* Assets.xcassets */,
 				9757462F2B9059F2008F688C /* OhmSwift.entitlements */,
 				975746302B9059F2008F688C /* Preview Content */,
@@ -85,6 +109,11 @@
 			dependencies = (
 			);
 			name = OhmSwift;
+			packageProductDependencies = (
+				97C6CF862B90B2D2005B1CCB /* CP3_UI */,
+				97C6CF912B91316F005B1CCB /* OSCKit */,
+				97C6CF932B91316F005B1CCB /* OSCKitCore */,
+			);
 			productName = OhmSwift;
 			productReference = 975746262B9059F1008F688C /* OhmSwift.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +142,10 @@
 				Base,
 			);
 			mainGroup = 9757461D2B9059F1008F688C;
+			packageReferences = (
+				97C6CF852B90B2D2005B1CCB /* XCRemoteSwiftPackageReference "CP3_UI" */,
+				97C6CF902B91316F005B1CCB /* XCRemoteSwiftPackageReference "OSCKit" */,
+			);
 			productRefGroup = 975746272B9059F1008F688C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,8 +172,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97C6CF892B90DC74005B1CCB /* Event.swift in Sources */,
 				9757462C2B9059F1008F688C /* ContentView.swift in Sources */,
+				97C6CF842B909046005B1CCB /* GridView.swift in Sources */,
+				97C6CF962B913178005B1CCB /* OscManager.swift in Sources */,
+				97C6CF8B2B90DC7F005B1CCB /* Sequence.swift in Sources */,
 				9757462A2B9059F1008F688C /* OhmSwiftApp.swift in Sources */,
+				97C6CF8D2B90DC8B005B1CCB /* Command.swift in Sources */,
+				97C6CF8F2B90DCA4005B1CCB /* ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +398,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		97C6CF852B90B2D2005B1CCB /* XCRemoteSwiftPackageReference "CP3_UI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:cornedriesprong/CP3_UI.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		97C6CF902B91316F005B1CCB /* XCRemoteSwiftPackageReference "OSCKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/orchetect/OSCKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		97C6CF862B90B2D2005B1CCB /* CP3_UI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 97C6CF852B90B2D2005B1CCB /* XCRemoteSwiftPackageReference "CP3_UI" */;
+			productName = CP3_UI;
+		};
+		97C6CF912B91316F005B1CCB /* OSCKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 97C6CF902B91316F005B1CCB /* XCRemoteSwiftPackageReference "OSCKit" */;
+			productName = OSCKit;
+		};
+		97C6CF932B91316F005B1CCB /* OSCKitCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 97C6CF902B91316F005B1CCB /* XCRemoteSwiftPackageReference "OSCKit" */;
+			productName = OSCKitCore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9757461E2B9059F1008F688C /* Project object */;
 }
